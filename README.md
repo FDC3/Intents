@@ -16,7 +16,7 @@ Combined with FDC3 Context Data and App Directory standards, Intents enable rich
 
 **Directing a market data platform to show a chart**
 ```javascript
-fdc3.open("my-platform","viewChart",{
+fdc3.open("my-platform","ViewChart",{
  object:"fdc3-context",
  version:"0.0.1",
  definition:"https://fdc3/schema/context/0.0.1",
@@ -32,7 +32,7 @@ fdc3.open("my-platform","viewChart",{
 
 **Discovering an app that can start a chat**
 ```javascript
-fdc3.open(null,"startChat",{
+fdc3.open(null,"StartChat",{
  object:"fdc3-context",
  version:"0.0.1",
  definition:"https://fdc3/schema/context/0.0.1",
