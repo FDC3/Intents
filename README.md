@@ -6,8 +6,8 @@ FDC3 Intents specifications, schemas, and examples
 * Standard context and intent definitions let us create workflows on the fly
 
 FDC3 Intents define a standard set of verbs that can be used to put together common cross-application workflows on the financial desktop.
-* Applications register actions they support, and action is a verb applied to a context
-* The registries support app discovery by intents or context
+* Applications register the intents & context combination they support
+* The registries support app discovery by intents and/or context
 * Intents are not full RPC, Apps don’t need to enumerate every function with an intent
 * FDC3 Standard intents are a limited set, organizations can create their own intents
 
