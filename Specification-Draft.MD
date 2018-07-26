@@ -2,8 +2,8 @@
 ## FDC3 Intents Overview ##
 FDC3 Intents define a standard set of nouns and verbs that can be used to put together common cross-application workflows on the financial desktop.  
 
-* Applications register intents they support
-* The registries support app discovery by intent
+* Applications register the intents & context combination they support
+* The registries support app discovery by intent and/or context
 * Intents are not full RPC, Apps don’t need to enumerate every function with an intent
 * FDC3 Standard intents are a limited set, organizations can create their own intents
 
@@ -32,37 +32,27 @@ However, there is a need for applications to ensure that their intents avoid col
 
 ## Initial Set of Intents ##
 
-* DialCall
-    * Context: contact
-    * Expected behavior: dial the contact number (TBD), but don’t initiate the call
-* SaveContact
-    * Context: Contact
-    * Expected behavior: contact will be saved by the application - for example, CRM or Chat contacts
-* SaveInstrument
-    * Context: Instrument
-    * Expected behavior: save instrument to a monitor or similar application
-* ShareContext
-    * Context: App Context
-    * Expected behavior: initiate social share of the context 
 * StartCall
-    * Context: contact
-    * Expected behavior: initiate call with contact(s)
+  * Expected Context: Contact
+  * Expected behavior: initiate call with contact(s)
 * StartChat
-  * Context: contact
+  * Expected Context: Contact
   * Expected behavior: initiate chat with contact(s)
 * ViewChart
-   * Context: Instrument
-   * Expected behavior: display a chart for the context
+  * Expected Context: Instrument
+  * Expected behavior: display a chart for the context
 * ViewContact
-   * Context: Contact
-   * Expected behavior: display details of a contact
+  * Expected Context: Contact
+  * Expected behavior: display details of a contact
 * ViewQuote
-   * Context: Instrument
-   * Expected behavior: display pricing for an instrument
+  * Expected Context: Instrument
+  * Expected behavior: display pricing for an instrument
 * ViewNews
-   * Context: Any
-   * Expected behavior: display news for a given context
-
-
-**Note:**
-The sharing intent introduces the idea of sharing an App context.  This is a new context type that recreates the state of an App.  Needs to be defined in the Context Data spec.
+  * Expected Context: Instrument, Contact, Organisation, etc.
+  * Expected behavior: display news for a given context
+* ViewInstument
+  * Expected Context: Instrument
+  * Expected behavior: display relevant information for a given instrument
+* ViewAnalysis
+  * Expected Context: Instrument, Organization, etc.
+  * Expected behavior: Send context to receiving application for displaying analysis
