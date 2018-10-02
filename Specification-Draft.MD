@@ -20,7 +20,7 @@ FDC3 Intents define a standard set of nouns and verbs that can be used to put to
 * Atomic
     * There should be clear lines in a workflow where the object begins and ends
 * Stateless
-    * Workflows should not require callbacks or endpoints to maintain references to each other.  Once an intent is passed to an endpoint - it controls the rest of that workflow. 
+    * Workflows should not require callbacks or endpoints to maintain references to each other.  With the exception of specifically data-driven intents, once an intent is passed to an endpoint - it controls the rest of that workflow.
 * Specific
     * Terms should not be so open-ended that one endpoint could fulfill the intent in a completely different way than another
 * Distinct
