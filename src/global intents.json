@@ -1,35 +1,35 @@
 {
     "intents": [
         {
-            "name": "StartCall",
+            "name": "fdc3.startCall",
             "displayName": "Call" 
         },
         {
-            "name": "StartChat",
+            "name": "fdc3.startChat",
             "displayName": "Chat"
         },
         {
-            "name": "ViewChart",
+            "name": "fdc3.viewChart",
             "displayName": "Chart"
         },
         {
-            "name": "ViewContact",
+            "name": "fdc3.viewContact",
             "displayName": "View"
         },
         {
-            "name": "ViewQuote",
+            "name": "fdc3.viewQuote",
             "displayName": "Quote"
         },
         {
-            "name": "ViewNews",
+            "name": "fdc3.viewNews",
             "displayName": "News"
         },
         {
-            "name": "ViewInstrument",
+            "name": "fdc3.viewInstrument",
             "displayName": "Details"
         },
         {
-            "name": "ViewAnalysis",
+            "name": "fdc3.viewAnalysis",
             "displayName": "Analyze"
         }
     ]
