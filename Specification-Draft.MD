@@ -50,7 +50,7 @@ However, there is a need for applications to ensure that their intents avoid col
 * ViewNews
   * Expected Context: Instrument, Contact, Organisation, etc.
   * Expected behavior: display news for a given context
-* ViewInstument
+* ViewInstrument
   * Expected Context: Instrument
   * Expected behavior: display relevant information for a given instrument
 * ViewAnalysis
