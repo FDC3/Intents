@@ -10,7 +10,6 @@ env:
     # travis encrypt NPM_TOKEN=...
     # - secure: ""
 
-
 deploy:
   # TODO - enable it when ready to release
   - provider: script
