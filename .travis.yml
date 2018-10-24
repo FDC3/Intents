@@ -1,0 +1,43 @@
+language: node_js
+node_js:
+  - 8
+
+env:
+  global:
+    # travis encrypt GITHUB_USERNAME=....
+    # travis encrypt GITHUB_PASSWORD=....
+    # travis encrypt GH_TOKEN=....
+    # travis encrypt NPM_TOKEN=...
+    # - secure: ""
+
+
+deploy:
+  # TODO - enable it when ready to release
+  - provider: script
+    skip_cleanup: true
+    script: npm run semantic-release
+    on:
+      branch: docs-pages
+  - provider: script
+    skip_cleanup: true
+    # TODO - replace maoo/fdc3-pages-layout with FDC3/FDC3, as soon as code is contributed
+    script: curl https://raw.githubusercontent.com/maoo/FDC3/common-docs-layout/docs/prepare-docs-release.sh | bash
+    on:
+      branch: docs-pages
+  - provider: pages
+    skip-cleanup: true
+    github-token: $GH_TOKEN
+    email: $GITHUB_EMAIL
+    name: $GITHUB_USERNAME
+    verbose: true
+    keep-history: true
+    local-dir: gh-pages-docs
+    target_branch: gh-pages
+    on:
+      branch: docs-pages
+
+# TODO - enable it when ready to release
+# notifications:
+#   email:
+#     - fdc3-intents@finos.org
+#     - announce@finos.org

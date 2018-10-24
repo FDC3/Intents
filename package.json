@@ -1,0 +1,35 @@
+{
+  "name": "fdc3-intents",
+  "main": "index.js",
+  "repository": "https://github.com/maoo/Intents.git",
+  "license": "Apache-2.0",
+  "scripts": {
+    "semantic-release": "semantic-release"
+  },
+  "devDependencies": {
+    "semantic-release": "^15.10.3",
+    "@semantic-release/changelog": "^3.0.1",
+    "@semantic-release/git": "^7.0.5"
+  },
+  "release": {
+    "branch": "docs-pages",
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/git",
+      [
+        "@semantic-release/changelog",
+        {
+          "changelogFile": "docs/CHANGELOG.md.new"
+        }
+      ],
+      [
+        "@semantic-release/npm",
+        {
+          "npmPublish": false
+        }
+      ],
+      "@semantic-release/github"
+    ]
+  }
+}
