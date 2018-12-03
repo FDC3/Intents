@@ -1,4 +1,4 @@
-# FDC3 Intents Specification - Draft #
+# FDC3 Intents Specification #
 ## FDC3 Intents Overview ##
 FDC3 Intents define a standard set of nouns and verbs that can be used to put together common cross-application workflows on the financial desktop.  
 
