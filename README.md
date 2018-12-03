@@ -38,5 +38,5 @@ fdc3.findIntent("StartChat",{
 
 **Discovering apps that have intents for context type "contact"**
 ```javascript
-let availableContactHandlers = fdc3.findIntentsByContext("fd3.contact");
+let availableContactHandlers = fdc3.findIntentsByContext("fdc3.contact");
 ```
