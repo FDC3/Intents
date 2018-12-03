@@ -6,7 +6,7 @@
         {
             "name": "StartCall",
             "displayName": "Start a call",
-            "contexts": [ "fdc3.contact" ],
+            "contextTypes": [ "fdc3.contact" ],
             "customConfig": {
 
             }

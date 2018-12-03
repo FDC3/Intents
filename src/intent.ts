@@ -12,9 +12,9 @@ interface Intent {
     */
     displayName? : string;
     /*
-    * A list of the contexts the intent accepts. This will typically be a set of namespaced context types, e.g. "org.symphony.contact"
+    * A list of the context types the intent accepts. This will typically be a set of namespaced context types, e.g. "org.symphony.contact"
     */
-    contexts?: string[]
+    contextTypes?: string[]
     /*
     * Custom configuration for the intent that may be required for a particular desktop agent.
     */
