@@ -17,36 +17,26 @@ Combined with FDC3 Context Data and App Directory standards, Intents enable rich
 **Directing a market data platform to show a chart**
 ```javascript
 fdc3.open("my-platform","ViewChart",{
- object:"fdc3-context",
- version:"0.0.1",
- definition:"https://fdc3/schema/context/0.0.1",
- data:[
-  {
-    type:"instrument",
-    name:"IBM",
-    id:{
+  type:"fdc3.instrument",
+  name:"IBM",
+  id:{
       ticker:"ibm"
      }
-} ]});
+});
 ```
 
 **Discovering an app that can start a chat**
 ```javascript
-fdc3.open(null,"StartChat",{
- object:"fdc3-context",
- version:"0.0.1",
- definition:"https://fdc3/schema/context/0.0.1",
- data:[
-  {
-    type:"contact",
-    name:"Nick Kolba",
-    id:{
+fdc3.findIntent("StartChat",{
+ type:"fdc3.contact",
+ name:"Nick Kolba",
+ id:{
       email:"nick@openfin.co"
      }
-} ]});
+});
 ```
 
 **Discovering apps that have intents for context type "contact"**
 ```javascript
-let availableContactHandlers = fdc3.resolve(null,"contact");
+let availableContactHandlers = fdc3.findIntentsByContext("fd3.contact");
 ```
